@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tarunmethwani.sharemylocation.MainActivity">
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Fetching Location"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvData"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Share" />
+
+    <Button
+        android:id="@+id/btnTakePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnShare"
+        android:layout_alignRight="@+id/btnShare"
+        android:layout_below="@+id/btnShare"
+        android:layout_marginTop="32dp"
+        android:text="Take Photo" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/btnTakePic"
+        android:layout_alignRight="@+id/btnTakePic"
+        android:layout_below="@+id/btnTakePic"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/common_ic_googleplayservices" />
+
+    <Button
+        android:id="@+id/btnShare2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/iv1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/iv1"
+        android:layout_marginBottom="28dp"
+        android:text="Share" />
+
+</RelativeLayout>
